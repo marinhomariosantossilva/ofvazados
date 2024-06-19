@@ -206,9 +206,7 @@
             <img src="notificacoes.png" alt="" width="100%" />
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="btnLiberar">
-              Liberar
-            </button>
+            
           </div>
         </div>
       </div>
@@ -217,16 +215,7 @@
     <script>
       var myModal = new bootstrap.Modal(document.getElementById("modalAviso"));
       myModal.show();
-      var btnLiberar = document.getElementById("btnLiberar");
-      btnLiberar.addEventListener("click", function () {
-        if (typeof window._phv2Activator === "undefined") {
-          document.addEventListener("phv2site.ready", (e) => {
-            window._phv2Activator.activate("native_web_push");
-          });
-        } else {
-          window._phv2Activator.activate("native_web_push");
-        }
-      });
+      
     </script>
     <script type="text/javascript">
       const time_wait = 0;
